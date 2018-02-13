@@ -95,6 +95,7 @@ header .phone-nav-bar {
 .view .container {
   margin-top: 60vh;
   color: white;
+  z-index: 5;
 }
 
 .view .container h1 {
@@ -115,7 +116,6 @@ canvas {
 .quote {
   margin-top: 50px;
   margin-bottom: 50px;
-  border-left: 5px solid gray;
 }
 
 .quote .quote-text {
@@ -130,12 +130,65 @@ canvas {
   font-weight: bold;
 }
 
+.gold {
+  color: #ffcb03;
+}
+
+.quote {
+  font-weight: lighter;
+}
+
 .quote .quote-author {
   font-size: 0.95rem;
   font-style: italic;
 }
 
-.quote .inner {}
+.quote .inner {
+  border-left: 5px solid gray;
+  padding-left: 30px;
+}
+
+.member-section {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.member-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.members {
+  display: flex;
+  align-content: stretch;
+}
+
+.member-card {
+  padding: 5px;
+  width: 25%;
+  margin: auto;
+
+}
+
+.member-name {
+  margin: 20px 0 0;
+}
+
+.member-pos {
+  color: #777;
+  font-weight: 300;
+}
+
+.service .service-card {
+  margin: 0;
+  float: left;
+  width: 50%;
+}
+
+.service {
+  padding: 50px 0;
+  background-color: #eee;
+}
 
 footer {
   text-align: center;
@@ -197,5 +250,16 @@ footer a:hover {
   }
   .view .container {
     margin-top: 40vh;
+  }
+  .service .service-card {
+    width: 100%;
+    float: none;
+  }
+  .members {
+    display: block;
+  }
+  .member-card {
+    text-align: center;
+    width: 100%;
   }
 }
